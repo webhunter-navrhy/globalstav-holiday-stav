@@ -1,0 +1,37 @@
+[
+ {
+  "nazev": "Plastové okná",
+  "popis": "Výmena a nové okná s montážou a zapravením ostenia.",
+  "foto": "okna-plast.jpg",
+  "alt": "Biele plastové okná v rohu miestnosti",
+  "velka": true
+ },
+ {
+  "nazev": "Hliníkové a drevené okná",
+  "popis": "Pre domy, kde okno tvorí charakter fasády.",
+  "foto": "okna-hlinik-zasklenie.jpg",
+  "alt": "Hliníkové okná s veľkým zasklením"
+ },
+ {
+  "nazev": "Vchodové dvere",
+  "popis": "Dvere do domu a bytu vrátane osadenia.",
+  "foto": "dvere-vchod-drevo.jpg",
+  "alt": "Drevené vchodové dvere"
+ },
+ {
+  "nazev": "Žalúzie a rolety",
+  "popis": "Tienenie okien, aby bolo v lete chladnejšie a v zime teplejšie.",
+  "foto": "zaluzie.jpg",
+  "alt": "Žalúzie v okne"
+ },
+ {
+  "nazev": "Montáž a zapravenie",
+  "popis": "Osadenie okien a dverí vrátane zapravenia ostenia.",
+  "foto": "montaz.jpg",
+  "alt": "Montáž okna na dome"
+ },
+ {
+  "nazev": "Interiérové dvere",
+  "popis": "Dvere a zárubne do interiéru, osadenie na mieru."
+ }
+]

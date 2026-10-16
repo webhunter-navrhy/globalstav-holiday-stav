@@ -1,0 +1,43 @@
+{
+  "slug": "globalstav-holiday-stav",
+  "nazev": "Holiday stav s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/globalstav-holiday-stav/",
+  "base": "/globalstav-holiday-stav/",
+  "lang": "sk",
+  "popis": "Okná, dvere a tienenie na mieru v Košiciach a okolí, vrátane montáže. Pošlite rozmery a dostanete nezáväznú cenovú ponuku.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "",
+  "theme_color": "#f3efe7",
+  "typ": "LocalBusiness",
+  "ico": "51853914",
+  "kontakt": {
+    "email": "globalstavinvest@gmail.com",
+    "telefon": "+421 948 166 423",
+    "adresa": {
+      "ulice": "Jenisejská 45A",
+      "psc": "04012",
+      "mesto": "Košice",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Ako to prebieha",
+      "href": "#postup"
+    }
+  ]
+}

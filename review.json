@@ -1,0 +1,16 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Mobil 390/360 px, buňka 1: na mobilu pořád chybí hlavička. Stránka začíná rovnou nadpisem H1, takže v první obrazovce není vidět název Holiday stav, telefon ani tlačítko v liště. Oprava: přidat na mobilu lepivou hlavičku (výška asi 56 px). Vlevo bude textem „Holiday stav“, vpravo ikona-odkaz tel:+421948166423 a tlačítko „Poslať dopyt“, oba dotykové cíle aspoň 40 px. U kotev nastavit scroll-margin-top, aby obsah nezajížděl pod hlavičku.",
+    "Sekce Služby na PC (buňky 3–4): mřížka nedrží. Vpravo od velké dlaždice „Plastové okná“ je pod „Hliníkové a drevené okná“ prázdné místo. „Interiérové dvere“ je pod mřížkou jen jako osiřelý nadpis s drobným textem v řádku, bez fotky, a působí jako zbytek. Na mobilu (buňka 5) je to stejné. Oprava: dát „Interiérové dvere“ jako druhou malou dlaždici do pravého sloupce pod „Hliníkové…“, aby pravý sloupec vyplnil výšku velké dlaždice. Pokud fotka chybí, použít v dlaždici technický nákres dveří se zárubní ve stylu kroků.",
+    "Sekce Služby: rám okna z hera se do mřížky nepřenesl. Karty jsou oddělené obyčejnými mezerami a mají oranžové podtržení, ne tenké světlé linky jako příčky v hero. Fotka „Montáž a zapravenie“ navíc ukazuje americký dřevěný srub s dělníky na žebříku, ne osazení okna do zděného ostění. Oprava: dlaždice Služeb sevřít do jednoho rámu s 4–6px světlými příčkami bez mezer (stejná barva i tloušťka jako v hero). Popisky dát pod rám nebo do spodní lišty dlaždice. Montáž nahradit fotkou osazování plastového okna do zděného otvoru (kotvy, pěna, ostění)."
+  ],
+  "silne": [
+    "Hero na PC je opravené: H1, podnadpis, hříčka „šírka × výška = cenová ponuka“ i CTA jsou vlevo v první obrazovce a telefon je v hlavičce.",
+    "Ikony v „Ako to prebieha“ nahradily technické nákresy (kóta, řez rámem, okno), které navazují na kótované okno u formuláře. Kroky teď plynule přechází do výzvy „Pošlite rozmery“ a formuláře.",
+    "Fotky Služeb teď odpovídají popiskům (bílé plastové okno, žaluzie, vchodové dveře). Okna mají jako hlavní služba velkou dlaždici a ilustrační fotky jsou poctivě označené.",
+    "Světlá paleta s jedním rezavým akcentem, Bricolage + Figtree správně vykreslují slovenskou diakritiku, QA bez přetečení na všech šířkách a nic vymyšleného."
+  ],
+  "verdikt": "opravit – dvě výtky jsou opravené celé a nápad s kótovaným oknem teď prochází celým webem. Zbývá mobilní hlavička s názvem a CTA a dotažení mřížky Služeb do rámu okna, včetně osiřelé položky Interiérové dvere.",
+  "_hash": "b099a209b6505c1990449d96aa0921e2c2176a3c"
+}

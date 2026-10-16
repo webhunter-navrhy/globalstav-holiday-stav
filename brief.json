@@ -1,0 +1,6 @@
+{"firma":"Holiday stav s.r.o. (predtým GLOBALSTAV Holding s.r.o.)","obor":"Okná, dvere a tienenie","mesto":"Košice","ico":"51853914",
+"kontakty":{"email":"globalstavinvest@gmail.com","telefon":"+421 948 166 423","adresa":"Jenisejská 45A, 04012 Košice"},
+"web_klienta":null,"logo":"nemá, názov textom","brand":"žiadny; neutrálna paleta","tonalita":"vecne, bez nepodložených tvrdení",
+"fakta":[{"t":"IČO, adresa, telefón, e-mail","zdroj":"Zlaté stránky / recipients.csv kampane sk-stavba-remesla"},{"t":"zmena názvu na Holiday stav s.r.o.","zdroj":"e-mail klienta 8. 10. 2026"},{"t":"služby: okná, dvere, tienenie","zdroj":"recipients.csv obor Okná a okenice, pôvodný náhľad"}],
+"foto":"ilustračné Unsplash, nahradíme fotkami klienta",
+"chybi":["logo","fotky realizácií","presný zoznam služieb","oblasť pôsobenia"]}

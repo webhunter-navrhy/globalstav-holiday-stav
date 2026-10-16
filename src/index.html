@@ -1,0 +1,74 @@
+{% extends "_base.html" %}
+{% set titulek = 'Okná a dvere Košice – ' ~ site.nazev %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero__txt">
+    <p class="kicker">Okná · dvere · tienenie · Košice a okolie</p>
+    <h1>Okná a dvere na mieru, od merania po montáž.</h1>
+    <p class="lead">Pošlete nám rozmery alebo fotku. Ozveme sa s nezáväznou cenovou ponukou a postaráme sa o montáž.</p>
+    <p class="hero__kota"><span>šírka</span> × <span>výška</span> = cenová ponuka</p>
+    <p class="hero__cta"><a class="tlacitko" href="#kontakt">Poslať dopyt</a></p>
+  </div>
+  <div class="hero__foto">{{ img('hero.jpg', 'Veľké zasklené okná s výhľadom do zelene', sizes='(min-width: 56rem) 50vw, 100vw') }}
+    <span class="pane pane--v1"></span><span class="pane pane--v2"></span><span class="pane pane--h"></span>
+  </div>
+</section>
+
+<section class="sekce uvod">
+  <div class="wrap">
+    <p class="uvod__lead">Pomáhame vybrať okná a dvere, ktoré sa hodia k domu aj k rozpočtu, a postaráme sa o montáž vrátane zapravenia. Pri dopyte nepotrebujete poznať odborné názvy: stačí povedať, čo meníte, kde a v akom rozsahu.</p>
+    <p class="uvod__pozn">Holiday stav s.r.o., predtým GLOBALSTAV Holding s.r.o. · Košice</p>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <h2>S čím Vám vieme pomôcť</h2>
+    <ul class="sluzby" role="list">
+      {% for s in data.sluzby %}
+      <li class="sluzba{{ ' sluzba--bez' if not s.get('foto') }}{{ ' sluzba--velka' if s.get('velka') }}">
+        {% if s.get('foto') %}<div class="sluzba__foto">{{ img(s.foto, s.alt, sizes='(min-width: 48rem) 40vw, 90vw') }}</div>{% endif %}
+        <div class="sluzba__txt"><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="poznamka">Fotografie sú zatiaľ ilustračné, nahradíme ich fotkami realizácií Holiday stav. Foto: WorkerDi (plastové okná) a Ildar Sagdejev (žalúzie), CC BY-SA 4.0; montáž: Forest Service, verejná doména.</p>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap">
+    <h2 class="postup__h">Ako to prebieha</h2>
+    <ol class="kroky" role="list"><li><svg class="krok__ikona" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke="#1f2a2e" stroke-width="2"><rect x="30" y="8" width="70" height="52" stroke-width="4"/><path d="M65 10V58M32 34H98" stroke-width="2.5"/><g stroke="#a9582a" stroke-width="1.5"><path d="M30 72H100M30 68V76M100 68V76M14 8V60M10 8H18M10 60H18"/></g></svg><h3>Dopyt</h3><p>Napíšete, čo potrebujete. Stačí pár viet, rozmery alebo fotka.</p></li><li><svg class="krok__ikona" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke="#1f2a2e" stroke-width="2"><path d="M4 14H30V66H4ZM90 14H116V66H90Z" stroke-width="2.5"/><path d="M4 26L18 14M4 40L30 14M4 54L30 28M8 66L30 44M20 66L30 56M90 26L104 14M90 40L116 14M90 54L116 28M94 66L116 44M106 66L116 56" stroke-width="1"/><g stroke="#a9582a" stroke-width="1.5"><path d="M30 40H90M30 34V46M90 34V46M30 40L38 36M30 40L38 44M90 40L82 36M90 40L82 44"/></g></svg><h3>Obhliadka</h3><p>Pozrieme sa na miesto a zmeriame otvory.</p></li><li><svg class="krok__ikona" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke="#1f2a2e" stroke-width="2"><rect x="24" y="8" width="72" height="56" stroke-width="3.5"/><path d="M36 8V64M84 8V64" stroke-width="2"/><path d="M50 8V64M70 8V64" stroke-width="1" stroke-dasharray="3 3"/><path d="M36 22H24M36 36H24M36 50H24M84 22H96M84 36H96M84 50H96" stroke-width="1"/><g stroke="#a9582a" stroke-width="1.5"><path d="M24 74H96M24 70V78M96 70V78"/></g></svg><h3>Cenová ponuka</h3><p>Dostanete ponuku s cenou a termínom.</p></li><li><svg class="krok__ikona" viewBox="0 0 120 80" aria-hidden="true" fill="none" stroke="#1f2a2e" stroke-width="2"><path d="M2 4H118V76H2Z" stroke-width="1" stroke-dasharray="2 4"/><rect x="26" y="12" width="68" height="50" stroke-width="4"/><path d="M60 14V60M28 37H92" stroke-width="2.5"/><path d="M18 68H102" stroke-width="4"/><g stroke="#a9582a" stroke-width="1.5"><path d="M26 12L16 12M94 12L104 12M26 62L16 62M94 62L104 62M22 20H30M90 20H98M22 54H30M90 54H98"/></g></svg><h3>Montáž</h3><p>Osadíme, zapravíme a po sebe upraceme.</p></li></ol>
+  </div>
+  <div class="wrap kontakt__grid">
+    <div>
+      <h2>Pošlite rozmery, ozveme sa s ponukou.</h2>
+      <figure class="kota" aria-label="Schéma okna so šírkou a výškou">
+        <svg viewBox="0 0 320 250" role="img" aria-hidden="true">
+          <g fill="none" stroke="#1f2a2e" stroke-width="8"><rect x="44" y="12" width="264" height="190"/></g>
+          <path d="M176 16V198" stroke="#1f2a2e" stroke-width="6"/>
+          <rect x="48" y="16" width="124" height="182" fill="#dfe8e8"/><rect x="180" y="16" width="124" height="182" fill="#dfe8e8"/>
+          <g stroke="#a9582a" stroke-width="1.5" fill="#a9582a" font-family="Figtree,sans-serif" font-size="14" font-weight="600">
+            <path d="M44 226H308M44 219V233M308 219V233"/>
+            <path d="M18 12V202M11 12H25M11 202H25"/>
+            <text x="176" y="246" text-anchor="middle" stroke="none">šírka (mm)</text>
+            <text x="0" y="0" text-anchor="middle" stroke="none" transform="translate(11 107) rotate(-90)" dy="-4">výška (mm)</text>
+          </g>
+        </svg>
+      </figure>
+      <p class="kota__txt">Pri okne stačí šírka a výška otvoru. Ak ich nepoznáte, pošlite fotku a rozmery doladíme na obhliadke.</p>
+      <ul class="kont" role="list">
+        <li><small>E-mail</small><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></li>
+        <li><small>Telefón</small><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></li>
+        <li><small>Adresa</small><span>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</span></li>
+        <li><small>IČO</small><span>{{ site.ico }}</span></li>
+      </ul>
+    </div>
+    <div class="kontakt__form">
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}
